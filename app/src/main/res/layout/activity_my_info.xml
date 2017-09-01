@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff5f5f5"
+    android:fadingEdge="none"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar">
+            <Button
+                android:id="@+id/iv_back"
+                android:layout_width="50.0dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/csy_arr_back"
+                android:drawablePadding="5.0dip"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="14.0sp"
+                android:text="返回"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="个人资料"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@id/myHead"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:background="@drawable/bg_list_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/myHead"
+                android:textColor="#ff393939"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:id="@id/account_head"
+                android:layout_width="45.0dip"
+                android:layout_height="45.0dip"
+                android:layout_marginRight="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user_default" />
+        </LinearLayout>
+
+        <View style="@style/navigation_line_style" />
+
+        <LinearLayout
+            android:id="@id/mySex"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/bg_list_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_weight="1.0"
+                android:text="用户id"
+                android:textColor="#ff393939"
+                android:textSize="15.0sp" />
+
+            <TextView
+
+                android:id="@+id/myObject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:text="@string/alertSex"
+                android:textColor="#ff8d8d8d"
+                android:textSize="15.0sp" />
+
+        </LinearLayout>
+
+        <View style="@style/navigation_line_style" />
+
+        <View style="@style/navigation_line_style" />
+
+        <LinearLayout
+            android:id="@id/account_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:orientation="vertical">
+
+            <View style="@style/navigation_line_style" />
+
+            <LinearLayout
+                android:id="@id/myPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/bg_list_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/phone"
+                    android:textColor="#ff393939"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@id/myMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:textColor="#ff393939"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <View style="@style/navigation_line_style" />
+
+            <LinearLayout
+                android:id="@id/myPwd"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/bg_list_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/password"
+                    android:textColor="#ff393939"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:text="修改密码"
+                    android:textColor="#ff8d8d8d"
+                    android:textSize="15.0sp" />
+
+                <ImageView
+                    android:layout_width="34.0dip"
+                    android:layout_height="34.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:src="@drawable/user_info_nor" />
+            </LinearLayout>
+
+            <View style="@style/navigation_line_style" />
+        </LinearLayout>
+
+        <View
+            style="@style/navigation_line_style"
+            android:layout_marginTop="15.0dip" />
+
+        <Button
+            android:id="@id/logout"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/bg_list_item"
+            android:text="@string/logout"
+            android:textColor="#fffa3e5d"
+            android:textSize="16.0sp" />
+
+        <View style="@style/navigation_line_style" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Toolbar
+        style="@style/Toolbar"
+        android:id="@+id/toolbar"
+        >
+        <Button
+            android:id="@+id/iv_back"
+            android:layout_width="50.0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/csy_arr_back"
+            android:drawablePadding="5.0dip"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="14.0sp"
+            android:text="返回"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加油站详情"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asd"
+            android:paddingRight="8dp"
+            android:textColor="@color/white"
+            android:id="@+id/tv_title_button"
+            android:elevation="5dp"
+            android:layout_gravity="right" />
+    </Toolbar>
+<ScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/sv"
+    android:layout_below="@id/toolbar"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Lin2"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/dark_grey" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/v_dotted_line"
+                    android:text="上地加油站"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="500m"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="北京海淀区"
+                android:textColor="@color/translucent" />
+
+            <TextView
+                android:id="@+id/tv_addr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="上地西路"
+                android:textColor="@color/translucent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/v_dotted_line"
+                android:text="@string/station_price"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/dark_grey" />
+
+            <myview.NoScrollListView
+                android:id="@+id/lv_gast_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/h_dotted_line"
+                android:dividerHeight="2dp"
+                android:fadingEdge="none"
+
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/v_dotted_line"
+                android:text="@string/province_price"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/dark_grey" />
+
+            <myview.NoScrollListView
+                android:id="@+id/lv_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/h_dotted_line"
+                android:dividerHeight="2dp"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+        </LinearLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/dindan"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            >
+            <com.gc.materialdesign.views.Card
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ScrollView
+
+                    android:id="@id/head_body"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#fff5f5f6"
+                    android:fadingEdge="none"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff5f5f6"
+                        android:orientation="vertical">
+
+                        <!--<include layout="@layout/item_today_oil_price_lbs" />-->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffffff"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@id/ll_co"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@id/tv_co"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingBottom="10.0dip"
+                                    android:paddingTop="10.0dip"
+                                    android:text="加油订单"
+                                    android:textColor="@color/tv_co" />
+
+                                <View
+                                    android:id="@id/views2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="2.0dip"
+                                    android:background="#ff03a2fd" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View style="@style/navigation_line_style" />
+
+                        <LinearLayout
+                            style="@style/addcar_item_style"
+                            android:paddingLeft="20.0dip">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20.0dip"
+                                android:text="油号"
+                                android:textColor="#ff8d8d8d"
+                                android:textSize="15.0sp" />
+                            <Spinner
+                                android:layout_width="280dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/youhao"
+                                />
+
+                        </LinearLayout>
+
+                        <View style="@style/navigation_line_style" />
+
+                        <LinearLayout
+                            style="@style/addcar_item_style"
+                            android:paddingLeft="20.0dip">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20.0dip"
+                                android:text="加油量"
+                                android:textColor="#ff8d8d8d"
+                                android:textSize="15.0sp" />
+
+                            <EditText
+                                android:id="@+id/shuliang"
+                                style="@style/input_style2"
+                                android:hint="输入加油量"
+                                android:maxLength="30" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="升"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:textColor="#ff8d8d8d"
+                                android:textSize="15.0sp" />
+                        </LinearLayout>
+
+                        <View style="@style/navigation_line_style" />
+
+
+                        <View style="@style/navigation_line_style" />
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50.0dip"
+                            android:layout_margin="20.0dip"
+                            android:background="@drawable/bg_login_button"
+                            android:text="提交订单"
+                            android:textColor="#ffffffff" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10.0dip"
+                                android:paddingTop="10.0dip"
+                                android:text="提交即同意"
+                                android:textColor="#ff8d8d8d" />
+
+                            <TextView
+                                android:id="@id/tv_oilcard_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10.0dip"
+                                android:paddingTop="10.0dip"
+                                android:text="《加油订单服务协议》"
+                                android:textColor="#ff02a2ff" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </com.gc.materialdesign.views.Card>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+    <myview.AddFloatingActionButton
+        android:id="@+id/yudin"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="0dp"
+        fab:fab_plusIconColor="@color/white"
+        fab:fab_colorNormal="@color/blue_semi_transparent"
+        fab:fab_colorPressed="@color/blue_semi_transparent_pressed"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/circle_button"/>
+</RelativeLayout>

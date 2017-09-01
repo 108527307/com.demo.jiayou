@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FloatingActionsMenu1">
+
+    </declare-styleable>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color"/>
+        <attr name="fab_colorDisabled" format="color"/>
+        <attr name="fab_colorNormal" format="color"/>
+        <attr name="fab_icon" format="reference"/>
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_title" format="string"/>
+        <attr name="fab_stroke_visible" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="AddFloatingActionButton">
+        <attr name="fab_plusIconColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="FloatingActionsMenu">
+        <attr name="fab_bitmap" format="reference"/>
+        <attr name="fab_addButtonColorPressed" format="color"/>
+        <attr name="fab_addButtonColorNormal" format="color"/>
+        <attr name="fab_addButtonSize" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_addButtonPlusIconColor" format="color"/>
+        <attr name="fab_addButtonStrokeVisible" format="boolean"/>
+        <attr name="fab_labelStyle" format="reference"/>
+        <attr name="fab_labelsPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="fab_expandDirection" format="enum">
+            <enum name="up" value="0"/>
+            <enum name="down" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircleProgress">
+        <attr name="color1" format="reference|color"/>
+        <attr name="color2" format="reference|color"/>
+        <attr name="color3" format="reference|color"/>
+    </declare-styleable>
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0" />
+            <enum name="y" value="1" />
+            <enum name="z" value="2" />
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction" />
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+
+    <attr name="actionBarAddIcon" format="reference" />
+    <attr name="actionBarAcceptIcon" format="reference" />
+    <attr name="thumbnailIconStyle" format="reference" />
+    <attr name="showAsDialog" format="reference|boolean" />
+    <attr name="colorDialogBackground" format="reference|color" />
+
+    <declare-styleable name="ThumbnailIcon">
+        <attr name="apk" format="reference" />
+        <attr name="audio" format="reference" />
+        <attr name="certificate" format="reference" />
+        <attr name="code" format="reference" />
+        <attr name="compressed" format="reference" />
+        <attr name="contact" format="reference" />
+        <attr name="event" format="reference" />
+        <attr name="font" format="reference" />
+        <attr name="generic" format="reference" />
+        <attr name="image" format="reference" />
+        <attr name="pdf" format="reference" />
+        <attr name="presentation" format="reference" />
+        <attr name="spreadsheet" format="reference" />
+        <attr name="text" format="reference" />
+        <attr name="video" format="reference" />
+        <attr name="directory" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="Window">
+        <attr name="dialogWidthMajor" format="dimension|fraction" />
+        <attr name="dialogWidthMinor" format="dimension|fraction" />
+        <attr name="dialogHeightMajor" format="dimension|fraction" />
+        <attr name="dialogHeightMinor" format="dimension|fraction" />
+    </declare-styleable>
+
+</resources>

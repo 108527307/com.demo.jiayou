@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <Toolbar
+        style="@style/Toolbar"
+        android:id="@+id/toolbar" >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="@dimen/offset_title_left"
+            android:layout_marginRight="@dimen/offset_title_left"
+            android:layout_marginStart="@dimen/offset_title_left"
+            android:layout_marginTop="@dimen/offset_title_left"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/search_input"
+                android:clickable="true"
+                android:gravity="center"
+
+                android:visibility="visible"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/search_input_half"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:weightSum="1"
+                android:layout_toLeftOf="@id/btn_search"
+                android:id="@+id/linearLayout">
+
+                <EditText
+                    android:id="@+id/input_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                     android:paddingLeft="30dp"
+                    android:hint="请输入搜索关键字"
+                       android:singleLine="true"
+                    android:textColor="@color/gary"
+                    android:textColorHint="@color/darkgrey"
+                    android:textSize="14sp"
+                    android:layout_weight="24.43" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </Toolbar>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:background="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

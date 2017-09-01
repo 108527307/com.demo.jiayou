@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    
+    <Toolbar
+        style="@style/Toolbar"
+        android:id="@+id/toolbar" >
+        <Button
+            android:id="@+id/back2carslist"
+            android:layout_width="50.0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/csy_arr_back"
+            android:drawablePadding="5.0dip"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="14.0sp"
+            android:text="返回"
+
+            />
+    </Toolbar>
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+        <LinearLayout
+            android:id="@+id/cx_form"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/csy_form"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/csy_pd"
+            android:elevation="5dp"
+            android:padding="1.0dp" >
+
+
+            <LinearLayout style="@style/csy_row" >
+                <TextView
+                    style="@style/csy_row_label"
+                    android:text="品牌车型" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/csy_item_h"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/carbrand"
+                        style="@style/csy_textbox1"
+                        android:hint="请选择" />
+
+                    <ImageView
+                        style="@style/csy_row_icon"
+                        android:src="@drawable/csy_arr_drop" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 车牌号 -->
+            <LinearLayout style="@style/csy_row1" >
+
+                <TextView
+                    style="@style/csy_row_label"
+                    android:text="车牌号" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_cpsz"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/csy_item_h"
+                    android:layout_gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/carid1"
+                        style="@style/csy_textbox1"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 车架号 -->
+            <LinearLayout
+                android:id="@+id/row_chejia"
+                style="@style/csy_row1" >
+
+                <TextView
+                    style="@style/csy_row_label"
+                    android:text="车架号" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/csy_item_h"
+                    android:layout_gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/VIN"
+                        style="@style/csy_textbox1" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 发动机号 -->
+            <LinearLayout
+
+                style="@style/csy_row1" >
+
+                <TextView
+                    style="@style/csy_row_label"
+                    android:text="发动机号" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/csy_item_h"
+                    android:layout_gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/engineid"
+                        style="@style/csy_textbox1" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                style="@style/csy_row1" >
+
+                <TextView
+                    style="@style/csy_row_label"
+                    android:text="里程数" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/csy_item_h"
+                    android:layout_gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/km"
+                        android:inputType="number"
+                        style="@style/csy_textbox1" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/csy_row1" >
+
+                <TextView
+                    style="@style/csy_row_label"
+                    android:text="剩余油量" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/csy_item_h"
+                    android:layout_gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/flue"
+                        android:hint="%"
+                        android:inputType="number"
+                        style="@style/csy_textbox1" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                style="@style/csy_row1" >
+
+                <TextView
+                    style="@style/csy_row_label"
+                    android:text="车身级别" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/csy_item_h"
+                    android:layout_gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/bodylevel"
+                        android:hint="几门几座"
+                        style="@style/csy_textbox1" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                style="@style/csy_row1" >
+
+                <TextView
+                    style="@style/csy_row_label"
+                    android:text="发动机性能" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/csy_item_h"
+                    android:layout_gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/engine"
+                        android:hint="好/异常"
+                        style="@style/csy_textbox1" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                style="@style/csy_row1" >
+
+                <TextView
+                    style="@style/csy_row_label"
+                    android:text="变速器性能" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/csy_item_h"
+                    android:layout_gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/transmission"
+                        android:hint="好/异常"
+                        style="@style/csy_textbox1" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                style="@style/csy_row1" >
+
+                <TextView
+                    style="@style/csy_row_label"
+                    android:text="车灯状况" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/csy_item_h"
+                    android:layout_gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/carheadlight"
+                        android:hint="好/异常"
+                        style="@style/csy_textbox1" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/cx_form"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/csy_pd"
+                android:layout_marginRight="@dimen/csy_pd">
+
+                <Button
+                    android:id="@+id/submitcar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/csy_btn_h"
+                    android:layout_marginBottom="@dimen/csy_pd"
+                    android:background="@drawable/csy_btn"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/csy_text_ts" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <View
+        android:id="@+id/vMasker"
+        android:visibility="gone"
+        android:background="#e0000000"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</LinearLayout>

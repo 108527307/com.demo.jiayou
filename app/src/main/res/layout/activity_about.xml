@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    >
+    <Toolbar
+        style="@style/Toolbar"
+        android:id="@+id/toolbar"
+        >
+        <Button
+            android:id="@+id/iv_back"
+            android:layout_width="50.0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/csy_arr_back"
+            android:drawablePadding="5.0dip"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="14.0sp"
+            android:text="返回"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加油站列表"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal" />
+    </Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_below="@id/toolbar"
+            android:paddingTop="20.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+
+                    android:background="@drawable/zenconspencil" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_horizontal"
+                    android:text="@string/app_name"
+                    android:textSize="18.0sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="随着互联网+概念的提出，人们对“车联网”移动应用的需求也越来越大。本产品旨在促进车与互联网的整合。它可以帮助司机们更方便快捷地实现预约加油，并且提供当前位置周边的加油站信息。导航、管理车辆信息、查询违章等功能的集成，为车主们提供更快捷高速的体验。此外，开车之余，它可满足客户提供聆听音乐的需求，轻松驾驶，从现在开始。"/>
+            </LinearLayout>
+
+
+
+            <View style="@style/navigation_line_style" />
+
+
+
+
+        </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="©2016 南京工业大学计算机科学与技术学院csz团队"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ff373737"
+        android:textSize="14.0sp" />
+</RelativeLayout>

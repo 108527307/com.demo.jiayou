@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_input_half"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:id="@+id/jiaohuan"
+                android:src="@drawable/btn_condition_icon_switch_normal"/>
+        <LinearLayout
+            android:id="@+id/DaoHang"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:paddingRight="30dp"
+            android:visibility="visible"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/offset_title_left"
+                    android:layout_marginRight="@dimen/offset_title_left"
+                    android:layout_marginStart="@dimen/offset_title_left"
+                    android:layout_marginTop="@dimen/offset_title_left"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+
+                        android:clickable="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/start"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:drawableLeft="@drawable/nav_route_result_start_point"
+                            android:hint="            我的位置"
+                            android:singleLine="true"
+                            android:textColor="@color/gary"
+                            android:textColorHint="@color/darkgrey"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/dark_grey" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/offset_title_left"
+                    android:layout_marginRight="@dimen/offset_title_left"
+                    android:layout_marginStart="@dimen/offset_title_left"
+                    android:layout_marginTop="@dimen/offset_title_left"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/end"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:drawableLeft="@drawable/nav_route_result_end_point"
+                            android:hint="            目的地"
+                            android:singleLine="true"
+                            android:textColor="@color/gary"
+                            android:textColorHint="@color/darkgrey"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+            <ImageView
+                android:id="@+id/btn_search1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:src="@drawable/arrow_right_blue"
+                android:visibility="visible" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_loc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/location" />
+
+        <ImageView
+            android:id="@+id/iv_list"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/list" />
+
+        <LinearLayout
+            android:id="@+id/ll_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_toLeftOf="@id/iv_list"
+            android:layout_toRightOf="@id/iv_loc"
+            android:background="@drawable/search_input_half"
+            android:visibility="visible"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/v_dotted_line"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_price_a"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_price_b"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.gc.materialdesign.views.Card
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="品牌及车型" />
+
+                    <EditText
+                        android:id="@+id/carbrand"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:shadowRadius="1"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.gc.materialdesign.views.Card>
+
+        <com.gc.materialdesign.views.Card
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="车牌号" />
+
+                    <EditText
+                        android:id="@+id/carid"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:shadowRadius="1"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.gc.materialdesign.views.Card>
+        <com.gc.materialdesign.views.Card
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="发动机号" />
+
+                    <EditText
+                        android:id="@+id/engineid"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:shadowRadius="1"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.gc.materialdesign.views.Card>
+        <com.gc.materialdesign.views.Card
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="车架号" />
+
+                    <EditText
+                        android:id="@+id/VIN"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:shadowRadius="1"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.gc.materialdesign.views.Card>
+
+
+        <com.gc.materialdesign.views.Card
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="里程数" />
+
+                    <EditText
+                        android:id="@+id/km"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:shadowRadius="1"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.gc.materialdesign.views.Card>
+        <com.gc.materialdesign.views.Card
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="剩余油量" />
+
+                    <EditText
+                        android:id="@+id/flue"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:shadowRadius="1"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.gc.materialdesign.views.Card>
+        <com.gc.materialdesign.views.Card
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="车身级别" />
+
+                    <EditText
+                        android:id="@+id/bodylevel"
+                        android:layout_width="240dp"
+                        android:hint="几门几座"
+                        android:layout_height="wrap_content"
+                        android:shadowRadius="1"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.gc.materialdesign.views.Card>
+        <com.gc.materialdesign.views.Card
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="发动机性能" />
+
+                    <EditText
+                        android:id="@+id/engine"
+                        android:layout_width="240dp"
+                        android:hint="好/异常"
+                        android:layout_height="wrap_content"
+                        android:shadowRadius="1"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.gc.materialdesign.views.Card>
+        <com.gc.materialdesign.views.Card
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="变速器性能" />
+
+                    <EditText
+                        android:id="@+id/transmission"
+                        android:layout_width="240dp"
+                        android:hint="好/异常"
+                        android:layout_height="wrap_content"
+                        android:shadowRadius="1"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.gc.materialdesign.views.Card>
+
+        <com.gc.materialdesign.views.Card
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:text="车灯状况" />
+
+                    <EditText
+                        android:id="@+id/carheadlight"
+                        android:layout_width="240dp"
+                        android:hint="好/异常"
+                        android:layout_height="wrap_content"
+                        android:shadowRadius="1"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.gc.materialdesign.views.Card>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/devide_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <myview.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/submitcar"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

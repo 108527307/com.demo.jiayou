@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff5f5f6"
+    android:fadingEdge="none"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="190.0dip"
+            android:background="@drawable/bg_ocean_2"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!-- <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                -<RelativeLayout android:gravity="center_vertical" android:id="@id/navigation_left" android:background="@drawable/bg_navigation_item" android:layout_width="51.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                     <ImageView android:layout_width="11.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/icon_arrow_backwhite_normal" />
+                 </RelativeLayout>
+                 <TextView android:textColor="#ffffffff" android:visibility="visible" android:text="@string/myAccount" style="@style/navigation_title_style" />
+                 <RelativeLayout android:gravity="center_vertical" android:id="@id/navigation_right" android:background="@drawable/bg_navigation_item" android:layout_width="62.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                     <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/icon_setting_normal" android:layout_alignParentRight="true" />
+                 </RelativeLayout>
+             </RelativeLayout>-->
+            <LinearLayout
+                android:id="@id/myAccount"
+                android:layout_width="fill_parent"
+                android:layout_height="152.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <LinearLayout
+                    android:layout_width="100.0dip"
+                    android:layout_height="100.0dip"
+                    android:background="@drawable/account_head_shape"
+                    android:gravity="center"
+                    android:padding="3.0dip">
+
+                    <ImageView
+                        android:id="@+id/userimage"
+                        android:layout_width="94.0dip"
+                        android:layout_height="94.0dip"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/user_default_big" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:paddingBottom="40.0dip"
+                    android:paddingLeft="20.0dip"
+                    android:paddingTop="40.0dip">
+
+
+                    <LinearLayout
+                        android:id="@id/accountGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15800820663"
+                            android:textColor="#ffffffff"
+                            android:textSize="18.0sp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/navigation_line_style" />
+
+        <LinearLayout
+            android:id="@id/myCar"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/bg_list_item"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/carinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <ImageView
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:src="@drawable/icon_mycar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:text="@string/myCar"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+
+                    android:layout_width="11.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/icon_arrow_next_gray" />
+            </LinearLayout>
+
+            <View
+                style="@style/navigation_line_style"
+                android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+        <!--<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/myOrder" android:background="@drawable/bg_list_item" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">-->
+        <!--<ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_order" />-->
+        <!--<TextView android:textSize="14.0sp" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/myOrder" />-->
+        <!--<TextView android:textSize="14.0sp" android:textColor="#ff03a2fc" android:id="@id/myOrderNum" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="待付款 0 笔" android:layout_weight="1.0" />-->
+        <!--<ImageView android:id="@id/iv_oval" android:background="@drawable/shape_oval" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="5.0dip" />-->
+        <!--<ImageView android:layout_width="11.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_arrow_next_gray" />-->
+        <!--</LinearLayout>-->
+        <View style="@style/navigation_line_style" />
+
+        <View
+            style="@style/navigation_line_style"
+            android:layout_marginTop="15.0dip"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@id/recommend"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/bg_list_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:src="@drawable/icon_share" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:text="@string/recommend"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <View style="@style/navigation_line_style" />
+
+        <View
+            style="@style/navigation_line_style"
+            android:layout_marginTop="15.0dip" />
+
+        <LinearLayout
+            android:id="@id/contactUs"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/bg_list_item"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <ImageView
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:src="@drawable/icon_contactus" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:text="@string/contactUs"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:layout_width="11.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/icon_arrow_next_gray" />
+            </LinearLayout>
+
+            <View
+                style="@style/navigation_line_style"
+                android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/bg_list_item"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <ImageView
+                    android:layout_width="25.0dip"
+                    android:layout_height="25.0dip"
+                    android:src="@drawable/icon_qa" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingLeft="12.0dip"
+                    android:paddingRight="12.0dip"
+                    android:text="关于"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:layout_width="11.0dip"
+                    android:layout_height="20.0dip"
+                    android:src="@drawable/icon_arrow_next_gray" />
+            </LinearLayout>
+
+            <View
+                style="@style/navigation_line_style"
+                android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+
+
+
+        <View style="@style/navigation_line_style" />
+    </LinearLayout>
+</ScrollView>

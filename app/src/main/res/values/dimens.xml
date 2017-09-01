@@ -1,0 +1,134 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="abc_config_prefDialogWidth">320.0dip</dimen>
+    <dimen name="abc_action_bar_stacked_tab_max_width">180.0dip</dimen>
+    <dimen name="abc_action_bar_default_height">48.0dip</dimen>
+    <dimen name="abc_action_bar_icon_vertical_padding">8.0dip</dimen>
+    <dimen name="abc_action_bar_title_text_size">18.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_text_size">14.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_top_margin">-3.0dip</dimen>
+    <dimen name="abc_action_bar_subtitle_bottom_margin">5.0dip</dimen>
+    <dimen name="abc_action_button_min_width">56.0dip</dimen>
+    <dimen name="abc_action_bar_stacked_max_height">48.0dip</dimen>
+    <dimen name="abc_panel_menu_list_width">296.0dip</dimen>
+    <dimen name="abc_search_view_text_min_width">160.0dip</dimen>
+    <dimen name="abc_search_view_preferred_width">320.0dip</dimen>
+    <dimen name="abc_dropdownitem_text_padding_left">8.0dip</dimen>
+    <dimen name="abc_dropdownitem_text_padding_right">8.0dip</dimen>
+    <dimen name="abc_dropdownitem_icon_width">32.0dip</dimen>
+    <dimen name="h3">18.0sp</dimen>
+    <dimen name="divide_line_height">0.39999998dip</dimen>
+    <dimen name="alphabet_size">12.0dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350.0dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580.0dip</dimen>
+
+ <dimen name="default_circle_view_size">200dp</dimen>
+   <dimen name="activity_horizontal_margin">16dp</dimen>
+ <dimen name="fab_size_normal">56dp</dimen>
+ <dimen name="fab_size_mini">40dp</dimen>
+
+ <dimen name="fab_icon_size">24dp</dimen>
+
+ <dimen name="fab_plus_icon_size">14dp</dimen>
+ <dimen name="fab_plus_icon_stroke">2dp</dimen>
+
+ <dimen name="fab_shadow_offset">3dp</dimen>
+ <dimen name="fab_shadow_radius">9dp</dimen>
+
+ <dimen name="fab_stroke_width">1dp</dimen>
+
+ <dimen name="fab_actions_spacing">16dp</dimen>
+ <dimen name="fab_labels_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="poi_title_size">14sp</dimen>
+    <dimen name="poi_field_size">14sp</dimen>
+    <dimen name="margin_left">15dp</dimen>
+    <dimen name="margin_right">15dp</dimen>
+    <dimen name="offset_title_left">5dp</dimen>
+    <dimen name="detail_img_offset_top">8dp</dimen>
+    <dimen name="index_offset">4dp</dimen>
+    <dimen name="width_title_leftImg">30dp</dimen>
+    <dimen name="title_text_size">15sp</dimen>
+   <dimen name="csy_pd">10.0dp</dimen>
+   <dimen name="csy_mg">15.0dp</dimen>
+   <dimen name="csy_label_w">70.0dp</dimen>
+   <dimen name="csy_icon_w">40.0dp</dimen>
+   <dimen name="csy_row_h">64.0dp</dimen>
+   <dimen name="csy_item_h">52.0dp</dimen>
+   <dimen name="csy_tip_h">30.0dp</dimen>
+   <dimen name="csy_btn_h">46.0dp</dimen>
+
+   <string name="csy_close">关闭</string>
+   <dimen name="csy_label_ts">13.0sp</dimen>
+   <dimen name="csy_tip_ts">14.0sp</dimen>
+   <dimen name="csy_text_ts">16.0sp</dimen>
+   <dimen name="csy_title_ts">18.0sp</dimen>
+   <dimen name="start_logo_width">220px</dimen>
+    <dimen name="start_logo_height">220px</dimen>
+    <dimen name="login_logoTip_width">610px</dimen>
+    <dimen name="login_logoTip_height">52px</dimen>
+    <dimen name="login_welcome_width">362px</dimen>
+    <dimen name="login_welcome_height">70px</dimen>
+    <dimen name="login_et_uid_width">470px</dimen>
+    <dimen name="login_et_uid_height">75px</dimen>
+    <dimen name="login_et_psw_width">470px</dimen>
+    <dimen name="login_et_psw_height">76px</dimen>
+    <dimen name="login_btn_login_width">471px</dimen>
+    <dimen name="login_btn_login_height">76px</dimen>
+    <dimen name="login_welcome_margin_top">150px</dimen>
+    <dimen name="login_et_uid_margin_top">65px</dimen>
+    <dimen name="login_et_psw_margin_top">29px</dimen>
+    <dimen name="login_btn_login_margin_top">29px</dimen>
+    <dimen name="main_title_size">36px</dimen>
+    <dimen name="main_title_height">100px</dimen>
+    <dimen name="main_bottom_height">100px</dimen>
+    <dimen name="main_menu_icon_width">40px</dimen>
+    <dimen name="main_menu_icon_height">40px</dimen>
+    <dimen name="main_menu_logo_width">64px</dimen>
+    <dimen name="main_menu_logo_height">64px</dimen>
+    <dimen name="main_menu_text_size">22px</dimen>
+    <dimen name="office_menu_location_icon_width">25px</dimen>
+    <dimen name="office_menu_location_icon_height">25px</dimen>
+    <dimen name="office_menu_weather_icon_width">80px</dimen>
+    <dimen name="office_menu_weather_icon_height">80px</dimen>
+    <dimen name="office_menu_icon_width">70px</dimen>
+    <dimen name="office_menu_icon_height">70px</dimen>
+    <dimen name="office_menu_text_size">25px</dimen>
+    <dimen name="office_menu_bg_width">200px</dimen>
+    <dimen name="office_menu_bg_height">180px</dimen>
+    <dimen name="office_menu_icon_margin">30px</dimen>
+    <dimen name="office_menu_text_margin_top">20px</dimen>
+    <dimen name="office_menu_text_new_margin_top">15px</dimen>
+    <dimen name="office_menu_margin_top">27dp</dimen>
+    <dimen name="approval_menu_bg_width">573px</dimen>
+    <dimen name="approval_menu_bg_height">112px</dimen>
+    <dimen name="approval_menu_icon_width">60px</dimen>
+    <dimen name="approval_menu_icon_height">60px</dimen>
+    <dimen name="approval_margin_left">24px</dimen>
+    <dimen name="approval_text_size">30px</dimen>
+    <dimen name="alert_dialog_title_height">64dp</dimen>
+    <dimen name="work_handle_icon_width">16dp</dimen>
+    <dimen name="work_handle_icon_height">16dp</dimen>
+
+    <item name="dialog_fixed_width_major" type="dimen">320dp</item>
+    <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
+    <item name="dialog_fixed_height_major" type="dimen">80%</item>
+    <item name="dialog_fixed_height_minor" type="dimen">100%</item>
+
+    <dimen name="unread_icon_width">20px</dimen>
+    <dimen name="unread_icon_height">20px</dimen>
+    <dimen name="return_icon_width">84px</dimen>
+    <dimen name="return_icon_height">40px</dimen>
+    <dimen name="edit_icon_width">68px</dimen>
+    <dimen name="edit_icon_height">44px</dimen>
+    <dimen name="mail_title_text_size">28px</dimen>
+    <dimen name="mail_text_size">30px</dimen>
+    <dimen name="right_icon_width">30px</dimen>
+    <dimen name="right_icon_height">30px</dimen>
+    <dimen name="note_title_height">80px</dimen>
+    <dimen name="vote_icon_checked">60px</dimen>
+    <dimen name="text_text_size">30px</dimen>
+</resources>

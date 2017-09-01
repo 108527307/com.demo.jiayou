@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/blue">
+
+    <Toolbar
+       style="@style/Toolbar"
+        android:id="@+id/toolbar"
+        >
+        <Button
+            android:id="@+id/backtomine"
+            android:layout_width="50.0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/csy_arr_back"
+            android:drawablePadding="5.0dip"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="14.0sp"
+            android:text="返回"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车辆列表"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal" />
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_crop_black_36dp"
+            android:id="@+id/button"
+            android:elevation="5dp"
+            android:layout_gravity="right" />
+    </Toolbar>
+
+    <myview.SlideCutListView
+        android:id="@+id/listview"
+        android:background="@color/white"
+        android:divider="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar" >
+    </myview.SlideCutListView>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listview"
+        android:layout_centerInParent="true"
+        android:text="车辆管理"
+        android:textSize="20sp" />
+    <myview.AddFloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="0dp"
+        fab:fab_plusIconColor="@color/white"
+        fab:fab_colorNormal="@color/blue_semi_transparent"
+        fab:fab_colorPressed="@color/blue_semi_transparent_pressed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/circle_button"/>
+</RelativeLayout>
